@@ -1,0 +1,2759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20220218.1.20_SAP" APIVersion="3.6.22049.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2026-03-04T02:22:22Z" uuid="b08083ec-0703-44f1-b80e-0e68841676a4">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="180.975mm" w="202.75mm" x="6.35mm" y="63.5mm"/>
+            <medium long="279.4mm" short="215.9mm" stock="letter"/>
+            <draw name="Pages" x="177.8mm" y="288.925mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="ACD8A12C-2D7C-4F58-BD8B-0FD33E013CD4">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+            </draw>
+            <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="hidden" w="55mm" x="190.5mm" y="269.875mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="A15ED3A4-0A67-4E47-A74C-74AE390D8F58">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="hidden" w="55mm" x="190.5mm" y="269.875mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="525773CB-3F2D-4B54-9629-A7BB765E347C">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <subform h="34.977mm" w="215.9mm" y="6.35mm">
+               <bind match="none"/>
+               <field h="15.35mm" name="NAME1" w="158.75mm" x="47.625mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="22pt" typeface="Arial" weight="bold">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.H.NAME1"/>
+                  <value>
+                     <text maxChars="40"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Name 1</text>
+                  </desc>
+               </field>
+               <field h="28.575mm" name="GRAPHIC" w="31.75mm" x="15.875mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <value>
+                     <image aspect="none"/>
+                  </value>
+                  <bind match="dataRef" ref="$.GRAPHICS"/>
+                  <desc>
+                     <exData name="Schema Annotation">Graphic Node GRAPHIC
+URL-FIELD = XSTRING</exData>
+                  </desc>
+               </field>
+               <field h="12.175mm" name="SORT1" w="31.75mm" x="15.875mm" y="22.216mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="12pt" typeface="Arial" weight="bold">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.H.SORT1"/>
+                  <value>
+                     <text maxChars="20"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Search Term 1</text>
+                  </desc>
+               </field>
+               <draw h="0in" name="Line1" w="161.973mm" x="47.602mm" y="25.293mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0.009mm" name="Line2" w="12.7mm" x="3.175mm" y="25.4mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line1" w="161.973mm" x="47.602mm" y="26.25mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line1" w="161.973mm" x="47.602mm" y="27.687mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line1" w="161.973mm" x="47.602mm" y="27.209mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line1" w="161.973mm" x="47.602mm" y="28.167mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line1" w="161.973mm" x="47.602mm" y="25.773mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line1" w="161.973mm" x="47.602mm" y="26.728mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line1" w="161.973mm" x="47.602mm" y="28.645mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0.009mm" name="Line2" w="12.7mm" x="3.175mm" y="25.908mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0.009mm" name="Line2" w="12.7mm" x="3.175mm" y="26.416mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0.009mm" name="Line2" w="12.7mm" x="3.175mm" y="26.924mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0.009mm" name="Line2" w="12.7mm" x="3.175mm" y="27.432mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0.009mm" name="Line2" w="12.7mm" x="3.175mm" y="27.94mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0.009mm" name="Line2" w="12.7mm" x="3.175mm" y="28.448mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="0.009mm" name="Line2" w="12.7mm" x="3.175mm" y="28.956mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <?templateDesigner expand 0?></subform>
+            <subform h="24.875mm" w="215.9mm" y="41.275mm">
+               <field h="6.35mm" locale="hy_AM" name="BEDAT" w="62mm" x="6.35mm" y="6.35mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                     <picture>date{D/MM/YYYY}</picture>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <caption reserve="11.4094mm">
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="9CDFCAC5-09A3-4F79-81B9-221506F987D5">DATE:</text>
+                     </value>
+                     <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.HD.BEDAT">
+                     <picture>date{YYYY-MM-DD}</picture>
+                  </bind>
+                  <desc>
+                     <text name="Schema Annotation">Purchase Order Date</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <format>
+                     <picture>date{DD/MM/YYYY}</picture>
+                  </format>
+               </field>
+               <field h="9.525mm" name="TITLE" w="104.775mm" x="76.293mm" y="6.35mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="14pt" typeface="Arial" underline="1" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="49.8386mm">
+                     <font baselineShift="0pt" size="14pt" typeface="Arial" underline="1" weight="bold"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="FBF2273E-8620-4BE0-B740-997C631F5B61">Our requirement For</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.HD.TITLE"/>
+                  <value>
+                     <text maxChars="255"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Name</text>
+                  </desc>
+               </field>
+               <bind match="none"/>
+               <field colSpan="-1" h="4.927mm" name="EBELN" w="146.05mm" x="6.35mm" y="15.875mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.EBELN"/>
+                  <caption reserve="0mm">
+                     <value>
+                        <text xliff:rid="3DE69C98-D9F4-4291-8BFC-5D486BA3AC01">  Our order no.</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <desc>
+                     <text name="Schema Annotation">Purchasing Document Number</text>
+                  </desc>
+               </field>
+               <field h="9mm" name="HEADER" w="95.25mm" x="60.325mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="12pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <caption reserve="0mm">
+                     <para hAlign="center" vAlign="middle"/>
+                  </caption>
+                  <value>
+                     <text maxChars="100"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.HEADER"/>
+                  <desc>
+                     <text name="Schema Annotation">Character 100</text>
+                  </desc>
+               </field>
+               <?templateDesigner expand 0?>
+               <field h="6.35mm" name="TextField1" w="62mm" x="152.4mm" y="15.875mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="bottom"/>
+                  <caption reserve="15.0683mm">
+                     <font baselineShift="0pt" typeface="Times New Roman" weight="bold"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="bottom"/>
+                     <value>
+                        <text xliff:rid="6329D037-295F-4232-B06D-5F991427A80E">Our Ref&#x2029; </text>
+                     </value>
+                  </caption>
+                  <bind match="none"/>
+                  <border>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+            </subform>
+            <subform h="38.129mm" name="F" w="215.9mm" y="241.271mm">
+               <bind match="none"/>
+               <draw h="0in" name="Line3" w="101.6mm" x="53.975mm" y="6.379mm">
+                  <value>
+                     <line slope="/"/>
+                  </value>
+               </draw>
+               <draw h="6.35mm" locale="ar_YE" name="Text6" w="57.15mm" x="155.575mm" y="3.204mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="587F3375-3097-4D90-B7AA-6EF9254BC0AA">إحدى شركات مجموعة هائل سعيد أنعم وشركاه</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               </draw>
+               <draw h="6.35mm" name="Text7" w="47.625mm" x="6.35mm" y="3.204mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="AFF04063-C64E-4046-9137-46E8B38309F0">A member of the HSA group</text>
+                  </value>
+                  <font size="9pt" typeface="Arial" weight="bold">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               </draw>
+               <field h="6.35mm" name="TEL_NUMBER" w="79.375mm" x="6.35mm" y="9.554mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="18.7968mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="0E662B1C-7D70-4899-939C-D0320E28B0A9">Tel	:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.TEL_NUMBER"/>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">First telephone no.: dialling code+number</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" name="FAX_NUMBER" w="79.375mm" x="6.35mm" y="12.729mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="18.7968mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="15D81BF8-1ECB-480D-88FE-216C29603903">Fax	:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.FAX_NUMBER"/>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">First fax no.: dialling code+number</text>
+                  </desc>
+               </field>
+               <field h="5.825mm" name="LANDX50_EN" w="79.375mm" x="6.35mm" y="19.079mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.FT.LANDX50_EN"/>
+                  <value>
+                     <text maxChars="50"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Country Name (Max. 50 Characters)</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" name="URI_ADDR" w="79.375mm" x="6.35mm" y="22.254mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="19.3024mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="9EB4BA8B-9125-47C3-B983-C3F5D94B0368">Website	:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.URI_ADDR"/>
+                  <value>
+                     <text maxChars="2048"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Universal Resource Identifier (URI)</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" name="PO_BOX" w="79.375mm" x="6.35mm" y="15.904mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="18.624mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="F3DBB3C7-71F4-4704-8DE9-1A21882A2101">PO Box	:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.PO_BOX"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">PO Box</text>
+                  </desc>
+               </field>
+               <field h="5.825mm" name="SMTP_ADDR" w="79.375mm" x="6.35mm" y="25.429mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="19.136mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="D20D048A-24F4-44F4-9AEF-21262AF92332">E-Mail	:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.SMTP_ADDR"/>
+                  <value>
+                     <text maxChars="241"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">E-Mail Address</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" locale="ar_YE" name="TEL_NUMBER" w="76.2mm" x="136.525mm" y="9.554mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <caption placement="right" reserve="27.4304mm">
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="A2CD13CD-4A41-472E-8F80-01BA6F58B7E2">تلفون		:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.TEL_NUMBER"/>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">First telephone no.: dialling code+number</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" locale="ar_YE" name="FAX_NUMBER" w="76.2mm" x="136.525mm" y="12.729mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <caption placement="right" reserve="27.4304mm">
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="B0F40170-5011-4150-A089-FAE4E018BBFC">فاكس		:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.FAX_NUMBER"/>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">First fax no.: dialling code+number</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" locale="ar_YE" name="PO_BOX" w="76.2mm" x="136.525mm" y="15.904mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <caption placement="right" reserve="27.4304mm">
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="C842CEE5-1C85-47CB-8E11-CB1C5E6DA278">ص.ب		:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.PO_BOX"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">PO Box</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" locale="ar_YE" name="LANDX50_AR" w="76.2mm" x="136.525mm" y="19.079mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.FT.LANDX50_AR"/>
+                  <value>
+                     <text maxChars="50"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Country Name (Max. 50 Characters)</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" locale="ar_YE" name="URI_ADDR" w="76.2mm" x="136.525mm" y="22.254mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <caption placement="right" reserve="27.264mm">
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="1EEADF9D-A766-4B25-A536-74E815D7A605">الموقع الإلكتروني	:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.URI_ADDR"/>
+                  <value>
+                     <text maxChars="2048"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Universal Resource Identifier (URI)</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" locale="ar_YE" name="SMTP_ADDR" w="76.2mm" x="136.525mm" y="25.429mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial">
+                     <fill>
+                        <color value="153,153,153"/>
+                     </fill>
+                  </font>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <caption placement="right" reserve="27.0912mm">
+                     <para hAlign="right" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="064D615D-D748-4E3C-9091-2F9BF927043B">البريد الإلكتروني	:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.FT.SMTP_ADDR"/>
+                  <value>
+                     <text maxChars="241"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">E-Mail Address</text>
+                  </desc>
+               </field>
+               <field h="24.05mm" name="GRAPHIC1" w="66.675mm" x="76.2mm" y="9.554mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <caption placement="bottom" reserve="0.01in">
+                     <font typeface="Arial"/>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.GRAPHICS1"/>
+                  <desc>
+                     <exData name="Schema Annotation">Graphic Node GRAPHIC
+URL-FIELD = XSTRING1</exData>
+                  </desc>
+               </field>
+               <?templateDesigner expand 0?>
+               <draw name="Pages" x="98.425mm" y="34.6mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" maxLength="0" xliff:rid="17A261E3-9080-4A0F-BECC-29CFCD269D41">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               </draw>
+               <field access="readOnly" h="7.5mm" id="floatingField006334" name="CurrentPage" presence="hidden" w="55mm" x="160.9mm" y="30.628mm">
+                  <ui>
+                     <numericEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="20mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="409021C4-873E-4573-917A-2DA6C0C0E6B0">Text Field</text>
+                     </value>
+                  </caption>
+                  <calculate override="error"/>
+                  <event activity="ready" name="event__layout_ready" ref="$layout">
+                     <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+                  </event>
+                  <?templateDesigner floatingFieldPlaceholder #?>
+                  <bind match="none"/>
+               </field>
+               <field access="readOnly" h="7.5mm" id="floatingField026500" name="PageCount" presence="hidden" w="55mm" x="160.9mm" y="30.628mm">
+                  <ui>
+                     <numericEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="20mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="A8F2AE7D-13A4-4E13-B71E-5684AE4A2F38">Text Field</text>
+                     </value>
+                  </caption>
+                  <calculate override="error"/>
+                  <event activity="ready" name="event__layout_ready" ref="$layout">
+                     <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+                  </event>
+                  <?templateDesigner floatingFieldPlaceholder ##?>
+                  <bind match="none"/>
+               </field>
+            </subform>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="tb" minH="69.999mm" w="200.025mm" y="31.75mm">
+         <bind match="none"/>
+         <subform columnWidths="3.911972in 100.268mm" layout="table" name="Table1">
+            <border>
+               <edge/>
+            </border>
+            <subform layout="row" name="Row2">
+               <assist role="TR"/>
+               <field h="5.566mm" name="HEADER_TEXT_1">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="255"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.HEADER_TEXT_1"/>
+                  <caption reserve="41.3333mm">
+                     <value>
+                        <text xliff:rid="54055F4C-0604-4491-830A-3CC59FD53765">  Your Performa Inv. No.</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <desc>
+                     <text name="Schema Annotation">Name</text>
+                  </desc>
+               </field>
+               <field h="5.566mm" name="Dated">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="255"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.HEADER_TEXT_2"/>
+                  <caption reserve="16.8081mm">
+                     <value>
+                        <text xliff:rid="AE8613DD-86D8-4E88-A4A1-6A24E8C33C3C">  Dated	:</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <desc>
+                     <text name="Schema Annotation">Name</text>
+                  </desc>
+               </field>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="Row3">
+               <assist role="TR"/>
+               <draw h="5.408mm">
+                  <font typeface="Arial"/>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                     <corner thickness="0.1778mm"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <para vAlign="middle"/>
+               </draw>
+               <field h="5.408mm" name="TEL_NUMBER">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.TEL_NUMBER"/>
+                  <caption reserve="16.697mm">
+                     <value>
+                        <text xliff:rid="7634EEA9-9988-4569-AF48-01485D5FBE0E">  Phone: </text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <desc>
+                     <text name="Schema Annotation">First telephone no.: dialling code+number</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="Row4">
+               <assist role="TR"/>
+               <field minH="6.52mm" name="VENDOR_NAME" w="99.364mm" y="0mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="255"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.VENDOR_NAME"/>
+                  <desc>
+                     <text name="Schema Annotation">Name</text>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="80CB691C-6B92-4E3B-9493-A3F8AE077DB9">  M/S :</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="6.52mm" name="FAX_NUMBER" y="0mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.FAX_NUMBER"/>
+                  <caption reserve="16.697mm">
+                     <value>
+                        <text xliff:rid="FE712588-AB87-464A-B71F-5B92E01C3913">  Fax	:</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <desc>
+                     <text name="Schema Annotation">First fax no.: dialling code+number</text>
+                  </desc>
+               </field>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="Row5">
+               <assist role="TR"/>
+               <draw h="5.566mm" name="Cell1">
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                     <corner thickness="0.1778mm"/>
+                     <corner thickness="0.1778mm"/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+               </draw>
+               <field h="5.566mm" name="SMTP_ADDR">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                     <corner thickness="0.1778mm"/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="241"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.SMTP_ADDR"/>
+                  <caption reserve="16.5318mm">
+                     <value>
+                        <text xliff:rid="B1F0BDC9-F22C-4A98-88BB-79DA91854FB7">  E-Mail	:</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <desc>
+                     <text name="Schema Annotation">E-Mail Address</text>
+                  </desc>
+               </field>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="Row6">
+               <assist role="TR"/>
+               <field colSpan="-1" h="6.362mm" minW="202.543mm" name="VERKF">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <bind match="dataRef" ref="$.HD.VERKF"/>
+                  <caption>
+                     <value>
+                        <text xliff:rid="23FC742B-236F-4E65-AB45-11CA8343C441">  Attn: Mr.:</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <desc>
+                     <text name="Schema Annotation">Responsible Salesperson at Supplier's Office</text>
+                  </desc>
+               </field>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <bind match="none"/>
+            <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+            <subform layout="row" name="Row6">
+               <assist role="TR"/>
+               <subform colSpan="2" columnWidths="31.3362mm 48.518mm 18.3011mm 38.8164mm 62.6632mm" layout="table" name="Table2">
+                  <border>
+                     <edge/>
+                  </border>
+                  <subform layout="row" name="Row1" y="0mm">
+                     <assist role="TR"/>
+                     <draw h="9.8721mm" name="Cell1">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="8CC82102-202C-456B-BCF9-8672AD99A3CB">Sr
+  No.</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     </draw>
+                     <draw h="9.8721mm" name="Cell2">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="29097AED-67FD-4F5E-93AD-859801896065">Description</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     </draw>
+                     <draw h="9.8721mm" name="Cell3">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="8360DC98-D95A-41C8-AF2E-BBEADBE09CD5">Qty</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     </draw>
+                     <draw h="9.8721mm" name="Cell4">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="CA1F154B-0EC5-4400-84AB-215D2F5017A0">Unit
+ Price</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     </draw>
+                     <draw h="9.8721mm" name="Cell5">
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <value>
+                           <text xliff:rid="AFEA17EE-41CC-41A2-87DD-9BCADBC683C7">Total Price</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     </draw>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <bind match="none"/>
+                     <?templateDesigner expand 1?></subform>
+                  <bind match="none"/>
+                  <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="Row6">
+               <assist role="TR"/>
+               <draw colSpan="-1" h="6.362mm" minW="202.543mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="C6904998-20C2-43ED-ADB4-CE6820C039D6">As per attached list</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.1778mm"/>
+                  </border>
+               </draw>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="Row6">
+               <assist role="TR"/>
+               <subform colSpan="2" name="Subform1" w="203.182mm" y="1.792mm">
+                  <bind match="none"/>
+                  <field h="9mm" name="INCO_TERMS" w="117.475mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="22.9791mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="6EA1CA58-52E4-431F-941D-493EC1FAC9CB">  Order value </text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$record.HD.INCO_TERMS"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <field h="9.525mm" name="WAERS" w="38.1mm" x="117.475mm" y="0.217mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" underline="1" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.HD.WAERS"/>
+                     <value>
+                        <text maxChars="5"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Currency Key</text>
+                     </desc>
+                     <caption reserve="2.5462mm">
+                        <value>
+                           <text xliff:rid="4032FE20-D90F-49DA-9688-6C8A508B9711">:</text>
+                        </value>
+                        <para vAlign="middle"/>
+                     </caption>
+                  </field>
+                  <field h="9.525mm" name="AMOUNT" w="45.174mm" x="154.884mm" y="0.217mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" underline="1" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="11"/>
+                     </value>
+                     <bind match="dataRef" ref="$record.HD.FINAL_AMOUNT"/>
+                     <desc>
+                        <text name="Schema Annotation">Amount in document currency</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                  </field>
+                  <field h="9mm" name="WORDS" w="200.057mm" x="0.001mm" y="10.473mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.HD.FINAL_WORDS"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <field h="9mm" name="PO_HD_TEXT" w="196.831mm" x="3.228mm" y="19.998mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" underline="1" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="31.321mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="C21FAAA9-38DA-4F45-AFEA-10ADE2646B94">Mode of payment :</text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$record.HD.PO_HD_TEXT"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <field h="9mm" name="DELIVERY_METHOD" w="196.831mm" x="3.228mm" y="29.523mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="31.321mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="A7D6C8BB-8D86-48B5-A51F-1D33389A1EA4">Mode of Delivery :</text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$record.HD.DELIVERY_METHOD"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <field h="9mm" name="DELIVERY_TIME" w="196.831mm" x="3.228mm" y="39.048mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="31.1537mm">
+                        <font baselineShift="0pt" size="8pt" typeface="Arial" weight="bold"/>
+                        <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="9D903D1A-FD1C-4775-B871-761505B74E9E">Time of Delivery :</text>
+                        </value>
+                     </caption>
+                     <bind match="dataRef" ref="$record.HD.DELIVERY_TIME"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <draw h="6.35mm" name="Text2" w="63.5mm" x="3.175mm" y="54.192mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="8215D654-836D-4B95-BD9C-A53B08F8DF06"> Documents required for clearance :</text>
+                     </value>
+                     <font baselineShift="0pt" size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <field h="33.502mm" name="DOC_REQ" w="196.85mm" x="3.175mm" y="60.542mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <bind match="dataRef" ref="$record.HD.DOC_REQ"/>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                     <value>
+                        <text maxChars="2000"/>
+                     </value>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 0?></subform>
+         <?templateDesigner expand 1?></subform>
+      <subform h="38.1mm" w="200.025mm">
+         <bind match="none"/>
+         <draw h="1.5in" name="Text3" w="199.771mm" y="0mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <exData contentType="text/html" xliff:rid="95D63BD1-671A-4819-B9A2-AE80D190B255">
+                  <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="font-size:9pt;letter-spacing:0in">All future correspondence relating to this order, please be addressed to our<span style="xfa-spacerun:yes"> </span><span style="font-size:10pt;letter-spacing:0em">purchasing</span><span style="xfa-spacerun:yes"> </span><span style="font-size:10pt;letter-spacing:0em">management</span></p><p style="font-size:9pt;letter-spacing:0in">Kindly acknowledge the receipt of the above and let us have your order confirmation per return.</p><p style="font-size:9pt;letter-spacing:0in">Note: See Appendix for details of items page 2.<span style="xfa-spacerun:yes"> </span></p><p style="letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="letter-spacing:0in">Best Regards,</p><p style="letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="letter-spacing:0in">General Manager<span style="xfa-tab-count:10">                                                                                          </span><span style="font-family:Calibri;font-size:11pt">Purchase In-charge</span></p><p style="font-family:'Times New Roman';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="font-family:'Times New Roman';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+               </exData>
+            </value>
+            <font typeface="Arial"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <border>
+               <edge presence="hidden"/>
+               <edge/>
+               <edge/>
+               <edge/>
+               <corner presence="hidden"/>
+               <corner/>
+               <corner/>
+               <corner/>
+            </border>
+         </draw>
+         <field h="6.35mm" hAlign="justify" name="CCNAME" w="76.2mm" y="19.05mm">
+            <ui>
+               <textEdit multiLine="1"/>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+            <value>
+               <text maxChars="255"/>
+            </value>
+            <bind match="dataRef" ref="$.HD.CCNAME"/>
+            <desc>
+               <text name="Schema Annotation">Name</text>
+            </desc>
+         </field>
+         <?templateDesigner expand 1?></subform>
+      <subform h="9.525mm" w="200.025mm">
+         <bind match="none"/>
+         <field h="9mm" name="EBELN" w="114.3mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial" underline="1" weight="bold"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="66.5568mm">
+               <font baselineShift="0pt" typeface="Arial" underline="1" weight="bold"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+               <value>
+                  <text xliff:rid="5A07A8A0-64B2-4346-813E-E26C88C3A3C3">APPENDIX TO PURCHASE ORDER NO:</text>
+               </value>
+            </caption>
+            <bind match="dataRef" ref="$.HD.EBELP_N"/>
+            <value>
+               <text maxChars="10"/>
+            </value>
+            <desc>
+               <text name="Schema Annotation">Purchasing Document Number</text>
+            </desc>
+         </field>
+         <?templateDesigner expand 1?></subform>
+      <subform layout="tb" w="200.025mm">
+         <bind match="none"/>
+         <subform columnWidths="11.256mm 40.765mm 27.996mm 15.861mm 13.573mm 18.354mm 16.6666mm 16.6666mm 24.392mm 14.638mm" layout="table" name="TABLE">
+            <subform id="overflowLeader_ID" layout="row" name="overflowLeader">
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="CDB59FD2-5681-4C12-A47B-7CC0848F97E7">Sr. No.</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="418B84EE-DBE1-4193-8F86-4353EE368907">Description</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="D31D8772-3D24-433A-B2BC-884026913B75">Manufacturer Part No./ Code</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw colSpan="2" h="8.761mm" w="33.333mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="B0BDE2B5-399A-4EB9-9F30-0304FC95F015">Qty. </text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw colSpan="2" h="8.761mm" w="33.333mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="565963D5-33DF-4C40-80B6-F0073D797DB2">UNIT PRICE&#x2029; (Curr.)</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="1F831B08-B56C-498F-A0FA-B252BB9BB241">Per</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw colSpan="2" h="8.761mm" w="33.333mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="E5CDCC56-C36E-4DB9-93A7-EA4426F9BFB2">TOTAL COST
+(Currency)</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <assist role="TH"/>
+               <occur max="-1"/>
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="DATA">
+               <field h="9mm" name="EBELP" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="5"/>
+                  </value>
+                  <bind match="dataRef" ref="$.EBELP"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="TXZ01" w="62mm" x="2.440944in">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="40"/>
+                  </value>
+                  <bind match="dataRef" ref="$.TXZ01"/>
+                  <desc>
+                     <text name="Schema Annotation">Short Text</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="MFRPN" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="40"/>
+                  </value>
+                  <bind match="dataRef" ref="$.MFRPN"/>
+                  <desc>
+                     <text name="Schema Annotation">Manufacturer Part Number</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="MENGE" w="62mm">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="3" leadDigits="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.MENGE"/>
+                  <desc>
+                     <text name="Schema Annotation">Purchase Order Quantity</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="9mm" name="MEINS" w="62mm" y="0.354333in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="3"/>
+                  </value>
+                  <bind match="dataRef" ref="$.MEINS"/>
+                  <desc>
+                     <text name="Schema Annotation">Purchase Order Unit of Measure</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                  </border>
+               </field>
+               <field h="9mm" name="NETPR" w="62mm" x="4.881889in" y="0.354333in">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal leadDigits="9"/>
+                  </value>
+                  <bind match="dataRef" ref="$.NETPR"/>
+                  <desc>
+                     <text name="Schema Annotation">Net Price in Purchasing Document (in Document Currency)</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="9mm" name="WAERS" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="5"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WAERS"/>
+                  <desc>
+                     <text name="Schema Annotation">Currency Key</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                  </border>
+               </field>
+               <field h="9mm" name="PEINH" w="62mm" y="1.063in">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="-1" leadDigits="5"/>
+                  </value>
+                  <bind match="dataRef" ref="$.PEINH"/>
+                  <desc>
+                     <text name="Schema Annotation">Price unit</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="NETWR" w="62mm">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal leadDigits="11"/>
+                  </value>
+                  <bind match="dataRef" ref="$.NETWR"/>
+                  <desc>
+                     <text name="Schema Annotation">Net Order Value in PO Currency</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="9mm" name="WAERS2" w="62mm" x="2.440944in" y="1.063in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="5"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WAERS2"/>
+                  <desc>
+                     <text name="Schema Annotation">Currency Key</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                  </border>
+               </field>
+               <assist role="TR"/>
+               <occur max="-1"/>
+               <bind match="dataRef" ref="$.DATA[*]"/>
+               <keep intact="none"/>
+               <?templateDesigner expand 0?></subform>
+            <occur min="0"/>
+            <bind match="dataRef" ref="$.TABLE"/>
+            <desc>
+               <text name="Schema Annotation">Z TT External PO MD</text>
+            </desc>
+            <overflow leader="overflowLeader"/>
+            <subform layout="row" name="DATA">
+               <assist role="TR"/>
+               <draw h="17.39mm" w="62mm">
+                  <font typeface="Arial"/>
+                  <border>
+                     <edge/>
+                  </border>
+                  <para vAlign="middle"/>
+               </draw>
+               <subform colSpan="7" h="17.39mm" name="Subform2" w="158.75mm">
+                  <bind match="none"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                  </border>
+                  <field h="9mm" name="INCO_TERMS" w="88.9mm" x="3.175mm" y="1.289mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="28.3723mm">
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="5113535C-BF5D-4880-BC49-D1A402E21F79">Total of all position</text>
+                        </value>
+                        <font baselineShift="0pt" size="8pt" typeface="Arial" weight="bold"/>
+                     </caption>
+                     <bind match="dataRef" ref="$record.HD.INCO_TERMS"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <field h="9.525mm" name="WORDS" w="158.75mm" x="0mm" y="7.639mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.HD.WORDS"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <field h="17.39mm" name="AMOUNT" w="62mm">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="3" leadDigits="11"/>
+                  </value>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                  </border>
+                  <desc>
+                     <text name="Schema Annotation">Amount in document currency</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <bind match="dataRef" ref="$record.HD.AMOUNT"/>
+               </field>
+               <field h="17.39mm" name="WAERS" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                  </border>
+                  <value>
+                     <text maxChars="5"/>
+                  </value>
+                  <bind match="dataRef" ref="$record.HD.WAERS"/>
+                  <desc>
+                     <text name="Schema Annotation">Currency Key</text>
+                  </desc>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="DATA">
+               <assist role="TR"/>
+               <draw h="16.17mm" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <subform colSpan="7" h="16.622mm" name="Subform2" w="160.194mm">
+                  <bind match="none"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                  </border>
+                  <field h="9mm" name="INCO_TERMS" w="88.9mm" x="3.176mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="28.9406mm">
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="D73DCD20-B8F2-48BB-9CA5-576DCFBD8E1A">Others</text>
+                        </value>
+                        <font baselineShift="0pt" size="8pt" typeface="Arial" weight="bold"/>
+                     </caption>
+                     <bind match="dataRef" ref="$record.HD.INCO_TERMS"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <field h="9.525mm" name="WORDS" w="155.575mm" x="1.444mm" y="6.576mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.HD.KWERT_WORDS"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <field h="16.17mm" name="TOTAL_KWERT" w="26.749mm">
+                  <ui>
+                     <numericEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal leadDigits="13"/>
+                  </value>
+                  <caption>
+                     <value>
+                        <text xliff:rid="BFAFBE4A-B141-4123-82C9-BD2EC726B6FC"/>
+                     </value>
+                  </caption>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                  </border>
+                  <bind match="dataRef" ref="$record.HD.TOTAL_KWERT"/>
+                  <desc>
+                     <text name="Schema Annotation">Condition Value</text>
+                  </desc>
+                  <validate nullTest="error"/>
+               </field>
+               <field minH="16.17mm" name="WAERS" w="13.063mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="5"/>
+                  </value>
+                  <bind match="dataRef" ref="$record.HD.WAERS"/>
+                  <desc>
+                     <text name="Schema Annotation">Currency Key</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                  </border>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="DATA">
+               <assist role="TR"/>
+               <draw h="17.39mm" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <subform colSpan="7" h="17.39mm" name="Subform2" w="187.269mm" x="23.169mm" y="7.139mm">
+                  <bind match="none"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                  </border>
+                  <field h="9mm" name="INCO_TERMS" w="88.9mm" x="3.175mm" y="1.289mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="28.9406mm">
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="FA39B111-8363-44D9-B8A8-D5DA807CE994">Total Amount</text>
+                        </value>
+                        <font baselineShift="0pt" size="8pt" typeface="Arial" weight="bold"/>
+                     </caption>
+                     <bind match="dataRef" ref="$record.HD.INCO_TERMS"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <field h="9.525mm" name="WORDS" w="158.75mm" x="0mm" y="7.639mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.HD.FINAL_WORDS"/>
+                     <value>
+                        <text maxChars="255"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <field h="17.39mm" name="AMOUNT" w="62mm">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="3" leadDigits="11"/>
+                  </value>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                  </border>
+                  <desc>
+                     <text name="Schema Annotation">Amount in document currency</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <bind match="dataRef" ref="$record.HD.FINAL_AMOUNT"/>
+               </field>
+               <field h="17.39mm" name="WAERS" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <border>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                     <corner/>
+                     <corner/>
+                     <corner presence="hidden"/>
+                  </border>
+                  <value>
+                     <text maxChars="5"/>
+                  </value>
+                  <bind match="dataRef" ref="$record.HD.WAERS"/>
+                  <desc>
+                     <text name="Schema Annotation">Currency Key</text>
+                  </desc>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 0?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 1?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 123?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://vhhycysdci.hec.hsa.com.ye:44302/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="Calibri" typeface="Calibri" weight="normal"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZMM_F_EXTERNALPO_TRYSH">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <TABLE dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <EBELP/>
+               <TXZ01/>
+               <MATNR/>
+               <MEINS/>
+               <MENGE/>
+               <NETPR/>
+               <NETWR/>
+               <EINDT/>
+               <WAERS/>
+               <PEINH/>
+               <WAERS2/>
+               <MFRPN/>
+            </DATA>
+         </TABLE>
+         <GRAPHICS/>
+         <HD>
+            <BUKRS/>
+            <BEDAT/>
+            <EBELN/>
+            <LIFNR/>
+            <NAME1/>
+            <NAME2/>
+            <NETWR/>
+            <EINDT/>
+            <WAERS/>
+            <WORDS/>
+            <VERKF/>
+            <TITLE/>
+            <HEADER_TEXT_1/>
+            <HEADER_TEXT_2/>
+            <PO_HD_TEXT/>
+            <DELIVERY_METHOD/>
+            <DOC_REQ/>
+            <INCO_TERMS/>
+            <INCO1/>
+            <INCO2/>
+            <TEL_NUMBER/>
+            <FAX_NUMBER/>
+            <SMTP_ADDR/>
+            <VENDOR_NAME/>
+            <DELIVERY_TIME/>
+            <AMOUNT/>
+            <CCNAME/>
+            <HEADER/>
+            <SUBHEADER/>
+            <VERSION/>
+            <TOTAL_KWERT/>
+            <FINAL_AMOUNT/>
+            <FINAL_WORDS/>
+            <KWERT_WORDS/>
+            <WERKS/>
+            <UNSEZ/>
+            <EBELP_N/>
+         </HD>
+         <GRAPHICS1/>
+         <FT>
+            <PO_BOX/>
+            <TEL_NUMBER/>
+            <FAX_NUMBER/>
+            <SMTP_ADDR/>
+            <LANDX50_AR/>
+            <COUNTRY/>
+            <LANDX50_EN/>
+            <REGION_AR/>
+            <ADRNR/>
+            <REGION_EN/>
+            <URI_ADDR/>
+         </FT>
+         <H>
+            <ADDRNUMBER/>
+            <NAME1/>
+            <NAME2/>
+            <SORT1/>
+            <TITLE_AR/>
+            <TITLE_EN/>
+         </H>
+         <CC/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+   <locale desc="Armenian (Armenia)" name="hy_AM">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>Յունուար</month>
+            <month>Փետրուար</month>
+            <month>Մարտ</month>
+            <month>Ապրիլ</month>
+            <month>Մայիս</month>
+            <month>Յունիս</month>
+            <month>Յուլիս</month>
+            <month>Օգոստոս</month>
+            <month>Սեպտեմբեր</month>
+            <month>Հոկտեմբեր</month>
+            <month>Նոյեմբեր</month>
+            <month>Դեկտեմբեր</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Յնր</month>
+            <month>Փտր</month>
+            <month>Մրտ</month>
+            <month>Ապր</month>
+            <month>Մյս</month>
+            <month>Յնս</month>
+            <month>Յլս</month>
+            <month>Օգս</month>
+            <month>Սեպ</month>
+            <month>Հոկ</month>
+            <month>Նոյ</month>
+            <month>Դեկ</month>
+         </monthNames>
+         <dayNames>
+            <day>Կիրակի</day>
+            <day>Երկուշաբթի</day>
+            <day>Երեքշաբթի</day>
+            <day>Չորեքշաբթի</day>
+            <day>Հինգշաբթի</day>
+            <day>Ուրբաթ</day>
+            <day>Շաբաթ</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Կիր</day>
+            <day>Երկ</day>
+            <day>Երք</day>
+            <day>Չոր</day>
+            <day>Հնգ</day>
+            <day>Ուր</day>
+            <day>Շաբ</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>Առ․</meridiem>
+            <meridiem>Եր․</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>Յ․Տ․</era>
+            <era>Ն․Ք․</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM DD, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">MM/DD/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">HH:MM:SS Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GanjkHmsSEDFwWxhKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z9.zzz</numberPattern>
+         <numberPattern name="currency">z9.99 $</numberPattern>
+         <numberPattern name="percent">z9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">,</numberSymbol>
+         <numberSymbol name="grouping">.</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">AMD</currencySymbol>
+         <currencySymbol name="isoname">AMD</currencySymbol>
+         <currencySymbol name="decimal">,</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+   <locale desc="Arabic (Egypt)" name="ar_EG">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>يناير</month>
+            <month>فبراير</month>
+            <month>مارس</month>
+            <month>أبريل</month>
+            <month>مايو</month>
+            <month>يونيو</month>
+            <month>يوليو</month>
+            <month>أغسطس</month>
+            <month>سبتمبر</month>
+            <month>أكتوبر</month>
+            <month>نوفمبر</month>
+            <month>ديسمبر</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>ينا</month>
+            <month>فبر</month>
+            <month>مار</month>
+            <month>أبر</month>
+            <month>ماي</month>
+            <month>يون</month>
+            <month>يول</month>
+            <month>أغس</month>
+            <month>سبت</month>
+            <month>أكت</month>
+            <month>نوف</month>
+            <month>ديس</month>
+         </monthNames>
+         <dayNames>
+            <day>الأحد</day>
+            <day>الاثنين</day>
+            <day>الثلاثاء</day>
+            <day>الأربعاء</day>
+            <day>الخميس</day>
+            <day>الجمعة</day>
+            <day>السبت</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>ح</day>
+            <day>ن</day>
+            <day>ث</day>
+            <day>ر</day>
+            <day>خ</day>
+            <day>ج</day>
+            <day>س</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>ص</meridiem>
+            <meridiem>م</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>قبل الميلاد</era>
+            <era>ميلادي</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM, YYYY</datePattern>
+         <datePattern name="long">D MMMM, YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/M/YYYY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">Z h:MM:SS A</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GanjkHmsSEDFwWxhKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$ z,zz9.99s</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">٫</numberSymbol>
+         <numberSymbol name="grouping">٬</numberSymbol>
+         <numberSymbol name="percent">٪</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">٠</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">ج.م.</currencySymbol>
+         <currencySymbol name="isoname">EGP</currencySymbol>
+         <currencySymbol name="decimal">٫</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+   <locale desc="Arabic (Yemen)" name="ar_YE">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>يناير</month>
+            <month>فبراير</month>
+            <month>مارس</month>
+            <month>أبريل</month>
+            <month>مايو</month>
+            <month>يونيو</month>
+            <month>يوليو</month>
+            <month>أغسطس</month>
+            <month>سبتمبر</month>
+            <month>أكتوبر</month>
+            <month>نوفمبر</month>
+            <month>ديسمبر</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>ينا</month>
+            <month>فبر</month>
+            <month>مار</month>
+            <month>أبر</month>
+            <month>ماي</month>
+            <month>يون</month>
+            <month>يول</month>
+            <month>أغس</month>
+            <month>سبت</month>
+            <month>أكت</month>
+            <month>نوف</month>
+            <month>ديس</month>
+         </monthNames>
+         <dayNames>
+            <day>الأحد</day>
+            <day>الاثنين</day>
+            <day>الثلاثاء</day>
+            <day>الأربعاء</day>
+            <day>الخميس</day>
+            <day>الجمعة</day>
+            <day>السبت</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>الأحد</day>
+            <day>الاثنين</day>
+            <day>الثلاثاء</day>
+            <day>الأربعاء</day>
+            <day>الخميس</day>
+            <day>الجمعة</day>
+            <day>السبت</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>ص</meridiem>
+            <meridiem>م</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>م.ق</era>
+            <era>م</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM, YYYY</datePattern>
+         <datePattern name="long">D MMMM, YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/M/YYYY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">Z h:MM:SS A</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GanjkHmsSEDFwWxhKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z9.zzz</numberPattern>
+         <numberPattern name="currency">$z9.99s</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">٫</numberSymbol>
+         <numberSymbol name="grouping">٬</numberSymbol>
+         <numberSymbol name="percent">٪</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">٠</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">ر.ي.</currencySymbol>
+         <currencySymbol name="isoname">YER</currencySymbol>
+         <currencySymbol name="decimal">٫</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2026-03-04T02:22:22Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:b08083ec-0703-44f1-b80e-0e68841676a4</xmpMM:DocumentID>
+         <pdfuaid:part>1</pdfuaid:part>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>
