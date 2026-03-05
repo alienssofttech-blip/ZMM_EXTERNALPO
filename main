@@ -466,7 +466,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-header_text_1 = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-header_text_1 WITH ''.
@@ -508,7 +508,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-header_text_2 = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-header_text_2 WITH ''.
@@ -571,7 +571,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-po_hd_text = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-po_hd_text WITH ''.
@@ -613,7 +613,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-delivery_method = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-delivery_method WITH ''.
@@ -655,7 +655,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-delivery_time = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-delivery_time WITH ''.
@@ -700,10 +700,16 @@ FORM entry_neu USING ent_retco ent_screen.
     LOOP AT textt23 INTO texts23.
       CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline .
     ENDLOOP.
+
     hd23-doc_req = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-doc_req WITH ''.
     REPLACE ALL OCCURRENCES OF SUBSTRING '<(>' IN hd23-doc_req WITH ''.
     REPLACE ALL OCCURRENCES OF SUBSTRING '<)>' IN hd23-doc_req WITH ''.
+
+* Fill clean-section nodes (centralized to avoid duplication)
+    PERFORM fill_externalpo_section_nodes USING lang name23
+                                        CHANGING hd23.
+
 
 
 *  ----------------------------------------------------------------------------
@@ -1390,7 +1396,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-header_text_1 = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-header_text_1 WITH ''.
@@ -1432,7 +1438,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-header_text_2 = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-header_text_2 WITH ''.
@@ -1494,7 +1500,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-po_hd_text = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-po_hd_text WITH ''.
@@ -1537,7 +1543,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-delivery_method = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-delivery_method WITH ''.
@@ -1579,7 +1585,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-delivery_time = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-delivery_time WITH ''.
@@ -1624,10 +1630,16 @@ FORM entry_neu USING ent_retco ent_screen.
     LOOP AT textt23 INTO texts23.
       CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline .
     ENDLOOP.
+
     hd23-doc_req = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-doc_req WITH ''.
     REPLACE ALL OCCURRENCES OF SUBSTRING '<(>' IN hd23-doc_req WITH ''.
     REPLACE ALL OCCURRENCES OF SUBSTRING '<)>' IN hd23-doc_req WITH ''.
+
+* Fill clean-section nodes (centralized to avoid duplication)
+    PERFORM fill_externalpo_section_nodes USING lang name23
+                                        CHANGING hd23.
+
 
 
 *  ----------------------------------------------------------------------------
@@ -1974,7 +1986,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-header_text_1 = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-header_text_1 WITH ''.
@@ -2016,7 +2028,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-header_text_2 = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-header_text_2 WITH ''.
@@ -2078,7 +2090,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-po_hd_text = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-po_hd_text WITH ''.
@@ -2121,7 +2133,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-delivery_method = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-delivery_method WITH ''.
@@ -2163,7 +2175,7 @@ FORM entry_neu USING ent_retco ent_screen.
     textf23 = ''.
 * To find Text Note
     LOOP AT textt23 INTO texts23.
-      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY ' '.
+      CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline.
     ENDLOOP.
     hd23-delivery_time = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-delivery_time WITH ''.
@@ -2208,10 +2220,16 @@ FORM entry_neu USING ent_retco ent_screen.
     LOOP AT textt23 INTO texts23.
       CONCATENATE textf23  texts23 INTO textf23 SEPARATED BY cl_abap_char_utilities=>newline .
     ENDLOOP.
+
     hd23-doc_req = textf23 .
     REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN hd23-doc_req WITH ''.
     REPLACE ALL OCCURRENCES OF SUBSTRING '<(>' IN hd23-doc_req WITH ''.
     REPLACE ALL OCCURRENCES OF SUBSTRING '<)>' IN hd23-doc_req WITH ''.
+
+* Fill clean-section nodes (centralized to avoid duplication)
+    PERFORM fill_externalpo_section_nodes USING lang name23
+                                        CHANGING hd23.
+
 
 
 *  ----------------------------------------------------------------------------
@@ -4848,6 +4866,66 @@ FORM entry_lpje_2 USING ent_retco ent_screen.
       ix_fonam       = tnapr-fonam          "HW 214570
     IMPORTING
       ex_retco       = ent_retco.
+ENDFORM.
+
+FORM read_ekko_text_by_id USING    p_id   TYPE thead-tdid
+                                    p_lang TYPE thead-tdspras
+                                    p_name TYPE thead-tdname
+                           CHANGING p_text TYPE znote2.
+  DATA: lt_text TYPE TABLE OF tline,
+        ls_text TYPE tdline.
+
+  REFRESH lt_text.
+  p_text = ''.
+
+  CALL FUNCTION 'READ_TEXT'
+    EXPORTING
+      id                      = p_id
+      language                = p_lang
+      name                    = p_name
+      object                  = 'EKKO'
+    TABLES
+      lines                   = lt_text
+    EXCEPTIONS
+      id                      = 1
+      language                = 2
+      name                    = 3
+      not_found               = 4
+      object                  = 5
+      reference_check         = 6
+      wrong_access_to_archive = 7
+      OTHERS                  = 8.
+
+  LOOP AT lt_text INTO ls_text.
+    CONCATENATE p_text ls_text INTO p_text SEPARATED BY cl_abap_char_utilities=>newline.
+  ENDLOOP.
+
+  REPLACE ALL OCCURRENCES OF SUBSTRING '*' IN p_text WITH ''.
+  REPLACE ALL OCCURRENCES OF SUBSTRING '<(>' IN p_text WITH ''.
+  REPLACE ALL OCCURRENCES OF SUBSTRING '<)>' IN p_text WITH ''.
+ENDFORM.
+
+FORM fill_externalpo_section_nodes USING    p_lang TYPE thead-tdspras
+                                            p_name TYPE thead-tdname
+                                   CHANGING p_hd23 TYPE zmm_st_externalpo.
+* Initialize/mapping from existing legacy fields
+  CLEAR: p_hd23-special_terms,
+         p_hd23-health_env_req,
+         p_hd23-pre_shipment_advice,
+         p_hd23-doc_required_clearance,
+         p_hd23-shipment_advice,
+         p_hd23-remarks,
+         p_hd23-bank_details.
+
+  p_hd23-special_terms          = p_hd23-po_hd_text.
+  p_hd23-health_env_req         = p_hd23-delivery_method.
+  p_hd23-pre_shipment_advice    = p_hd23-delivery_time.
+  p_hd23-doc_required_clearance = p_hd23-doc_req.
+
+* Dedicated Text IDs for additional sections
+  PERFORM read_ekko_text_by_id USING 'F26' p_lang p_name CHANGING p_hd23-shipment_advice.
+  PERFORM read_ekko_text_by_id USING 'F27' p_lang p_name CHANGING p_hd23-remarks.
+  PERFORM read_ekko_text_by_id USING 'F28' p_lang p_name CHANGING p_hd23-bank_details.
 ENDFORM.
 "{ End FM06PE02_02 ENHO AUTO_SCH_EMM_FM06PE02 IS-A-EMM AM_SCH_MM }
 
