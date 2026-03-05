@@ -1545,9 +1545,9 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
             </desc>
          </field>
          <?templateDesigner expand 0?></subform>
-      <subform name="SF_PAGE2_ADVICE" w="200.025mm">
+      <subform layout="tb" name="SF_PAGE2_ADVICE" w="200.025mm">
          <bind match="none"/>
-         <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" x="3.175mm" y="0mm">
+         <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" x="3.175mm">
             <draw h="4.5mm" name="LBL_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
                <ui>
                   <textEdit/>
@@ -1581,7 +1581,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 }</script>
             </event>
          </subform>
-         <subform name="SF_REMARKS" w="196.85mm" x="3.175mm" y="14.5mm">
+         <subform name="SF_REMARKS" w="196.85mm" x="3.175mm">
             <draw h="4.5mm" name="LBL_REMARKS" w="196.85mm" y="0mm">
                <ui>
                   <textEdit/>
@@ -1615,7 +1615,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 }</script>
             </event>
          </subform>
-         <subform name="SF_BANK_DETAILS" w="196.85mm" x="3.175mm" y="29mm">
+         <subform name="SF_BANK_DETAILS" w="196.85mm" x="3.175mm">
             <draw h="4.5mm" name="LBL_BANK_DETAILS" w="196.85mm" y="0mm">
                <ui>
                   <textEdit/>
