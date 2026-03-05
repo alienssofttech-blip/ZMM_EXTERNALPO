@@ -1473,108 +1473,6 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 }</script>
                         </event>
                      </subform>
-                     <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" y="84mm">
-                        <draw h="4.5mm" name="LBL_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
-                           <ui>
-                              <textEdit/>
-                           </ui>
-                           <value>
-                              <text>Shipment advice:</text>
-                           </value>
-                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
-                        </draw>
-                        <field h="10mm" name="SHIPMENT_ADVICE" w="196.85mm" y="4.5mm">
-                           <ui>
-                              <textEdit multiLine="1">
-                                 <border presence="hidden"/>
-                                 <margin/>
-                              </textEdit>
-                           </ui>
-                           <font size="6.8pt" typeface="Arial"/>
-                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
-                           <para vAlign="top"/>
-                           <bind match="dataRef" ref="$record.HD.SHIPMENT_ADVICE"/>
-                           <value>
-                              <text maxChars="3000"/>
-                           </value>
-                        </field>
-                        <event activity="layout:ready">
-                           <script contentType="application/x-javascript">var f = this.resolveNode("SHIPMENT_ADVICE");
-if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
-  this.presence = "hidden";
-} else {
-  this.presence = "visible";
-}</script>
-                        </event>
-                     </subform>
-                     <subform name="SF_REMARKS" w="196.85mm" y="98.5mm">
-                        <draw h="4.5mm" name="LBL_REMARKS" w="196.85mm" y="0mm">
-                           <ui>
-                              <textEdit/>
-                           </ui>
-                           <value>
-                              <text>Remarks:</text>
-                           </value>
-                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
-                        </draw>
-                        <field h="10mm" name="REMARKS" w="196.85mm" y="4.5mm">
-                           <ui>
-                              <textEdit multiLine="1">
-                                 <border presence="hidden"/>
-                                 <margin/>
-                              </textEdit>
-                           </ui>
-                           <font size="6.8pt" typeface="Arial"/>
-                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
-                           <para vAlign="top"/>
-                           <bind match="dataRef" ref="$record.HD.REMARKS"/>
-                           <value>
-                              <text maxChars="3000"/>
-                           </value>
-                        </field>
-                        <event activity="layout:ready">
-                           <script contentType="application/x-javascript">var f = this.resolveNode("REMARKS");
-if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
-  this.presence = "hidden";
-} else {
-  this.presence = "visible";
-}</script>
-                        </event>
-                     </subform>
-                     <subform name="SF_BANK_DETAILS" w="196.85mm" y="113mm">
-                        <draw h="4.5mm" name="LBL_BANK_DETAILS" w="196.85mm" y="0mm">
-                           <ui>
-                              <textEdit/>
-                           </ui>
-                           <value>
-                              <text>Bank Details:</text>
-                           </value>
-                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
-                        </draw>
-                        <field h="12mm" name="BANK_DETAILS" w="196.85mm" y="4.5mm">
-                           <ui>
-                              <textEdit multiLine="1">
-                                 <border presence="hidden"/>
-                                 <margin/>
-                              </textEdit>
-                           </ui>
-                           <font size="6.8pt" typeface="Arial"/>
-                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
-                           <para vAlign="top"/>
-                           <bind match="dataRef" ref="$record.HD.BANK_DETAILS"/>
-                           <value>
-                              <text maxChars="4000"/>
-                           </value>
-                        </field>
-                        <event activity="layout:ready">
-                           <script contentType="application/x-javascript">var f = this.resolveNode("BANK_DETAILS");
-if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
-  this.presence = "hidden";
-} else {
-  this.presence = "visible";
-}</script>
-                        </event>
-                     </subform>
                   </subform>
                   <?templateDesigner expand 1?></subform>
                <?templateDesigner expand 1?></subform>
@@ -1619,6 +1517,122 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
             </desc>
          </field>
          <?templateDesigner expand 0?></subform>
+      <subform layout="tb" name="SF_BILLING_INFO" w="200.025mm">
+         <bind match="none"/>
+         <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" x="3.175mm">
+            <draw h="4.5mm" name="LBL_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Shipment advice:</text>
+               </value>
+               <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+            </draw>
+            <field h="10mm" name="SHIPMENT_ADVICE" w="196.85mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="6.8pt" typeface="Arial"/>
+               <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+               <para vAlign="top"/>
+               <bind match="dataRef" ref="$record.HD.SHIPMENT_ADVICE"/>
+               <value>
+                  <text maxChars="3000"/>
+               </value>
+            </field>
+            <event activity="layout:ready">
+               <script contentType="application/x-javascript">var f = this.resolveNode("SHIPMENT_ADVICE");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+            </event>
+         </subform>
+         <subform name="SF_REMARKS" w="196.85mm" x="3.175mm">
+            <draw h="4.5mm" name="LBL_REMARKS" w="196.85mm" y="0mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Remarks:</text>
+               </value>
+               <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+            </draw>
+            <field h="10mm" name="REMARKS" w="196.85mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="6.8pt" typeface="Arial"/>
+               <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+               <para vAlign="top"/>
+               <bind match="dataRef" ref="$record.HD.REMARKS"/>
+               <value>
+                  <text maxChars="3000"/>
+               </value>
+            </field>
+            <event activity="layout:ready">
+               <script contentType="application/x-javascript">var f = this.resolveNode("REMARKS");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+            </event>
+         </subform>
+         <subform name="SF_BANK_DETAILS" w="196.85mm" x="3.175mm">
+            <draw h="4.5mm" name="LBL_BANK_DETAILS" w="196.85mm" y="0mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>Bank Details:</text>
+               </value>
+               <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+            </draw>
+            <field h="12mm" name="BANK_DETAILS" w="196.85mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="6.8pt" typeface="Arial"/>
+               <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+               <para vAlign="top"/>
+               <bind match="dataRef" ref="$record.HD.BANK_DETAILS"/>
+               <value>
+                  <text maxChars="4000"/>
+               </value>
+            </field>
+            <event activity="layout:ready">
+               <script contentType="application/x-javascript">var f = this.resolveNode("BANK_DETAILS");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+            </event>
+         </subform>
+         <event activity="layout:ready">
+            <script contentType="application/x-javascript">function hasValue(nodeName) {
+  var node = this.resolveNode(nodeName);
+  return node &amp;&amp; node.rawValue != null &amp;&amp; node.rawValue.toString().replace(/\s/g,"") != "";
+}
+if (hasValue("SHIPMENT_ADVICE") || hasValue("REMARKS") || hasValue("BANK_DETAILS")) {
+  this.presence = "visible";
+} else {
+  this.presence = "hidden";
+}</script>
+         </event>
+      </subform>
       <subform h="9.525mm" w="200.025mm">
          <bind match="none"/>
          <field h="9mm" name="EBELN" w="114.3mm">
