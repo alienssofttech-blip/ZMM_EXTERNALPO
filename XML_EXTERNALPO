@@ -1336,34 +1336,246 @@ URL-FIELD = XSTRING1</exData>
                         <text name="Schema Annotation">Name</text>
                      </desc>
                   </field>
-                  <draw h="6.35mm" name="Text2" w="63.5mm" x="3.175mm" y="54.192mm">
-                     <ui>
-                        <textEdit/>
-                     </ui>
-                     <value>
-                        <text xliff:rid="8215D654-836D-4B95-BD9C-A53B08F8DF06"> Documents required for clearance :</text>
-                     </value>
-                     <font baselineShift="0pt" size="8pt" typeface="Arial" weight="bold"/>
-                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
-                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
-                  </draw>
-                  <field h="33.502mm" name="DOC_REQ" w="196.85mm" x="3.175mm" y="60.542mm">
-                     <ui>
-                        <textEdit>
-                           <border presence="hidden"/>
-                           <margin/>
-                        </textEdit>
-                     </ui>
-                     <font size="8pt" typeface="Arial" weight="bold"/>
-                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
-                     <bind match="dataRef" ref="$record.HD.DOC_REQ"/>
-                     <desc>
-                        <text name="Schema Annotation">Name</text>
-                     </desc>
-                     <value>
-                        <text maxChars="2000"/>
-                     </value>
-                  </field>
+                  <subform name="SF_SECTIONS" w="196.85mm" x="3.175mm" y="54.192mm">
+                     <subform name="SF_SPECIAL_TERMS" w="196.85mm">
+                        <draw h="4.5mm" name="LBL_SPECIAL_TERMS" w="196.85mm" y="0mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Special Terms and Conditions: -</text>
+                           </value>
+                           <font size="7pt" typeface="Arial" textColor="0,0,180" underline="1" weight="bold"/>
+                        </draw>
+                        <field h="16mm" name="SPECIAL_TERMS" w="196.85mm" y="4.5mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="6.8pt" typeface="Arial"/>
+                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+                           <para vAlign="top"/>
+                           <bind match="dataRef" ref="$record.HD.SPECIAL_TERMS"/>
+                           <value>
+                              <text maxChars="4000"/>
+                           </value>
+                        </field>
+                        <event activity="layout:ready">
+                           <script contentType="application/x-javascript">var f = this.resolveNode("SPECIAL_TERMS");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+                        </event>
+                     </subform>
+                     <subform name="SF_HEALTH_ENV" w="196.85mm" y="21mm">
+                        <draw h="4.5mm" name="LBL_HEALTH_ENV" w="196.85mm" y="0mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Health &amp; environmental safety requirements:</text>
+                           </value>
+                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+                        </draw>
+                        <field h="13mm" name="HEALTH_ENV_REQ" w="196.85mm" y="4.5mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="6.8pt" typeface="Arial"/>
+                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+                           <para vAlign="top"/>
+                           <bind match="dataRef" ref="$record.HD.HEALTH_ENV_REQ"/>
+                           <value>
+                              <text maxChars="4000"/>
+                           </value>
+                        </field>
+                        <event activity="layout:ready">
+                           <script contentType="application/x-javascript">var f = this.resolveNode("HEALTH_ENV_REQ");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+                        </event>
+                     </subform>
+                     <subform name="SF_PRE_SHIPMENT" w="196.85mm" y="38.5mm">
+                        <draw h="4.5mm" name="LBL_PRE_SHIPMENT" w="196.85mm" y="0mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Pre-shipment advice:</text>
+                           </value>
+                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+                        </draw>
+                        <field h="10mm" name="PRE_SHIPMENT_ADVICE" w="196.85mm" y="4.5mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="6.8pt" typeface="Arial"/>
+                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+                           <para vAlign="top"/>
+                           <bind match="dataRef" ref="$record.HD.PRE_SHIPMENT_ADVICE"/>
+                           <value>
+                              <text maxChars="2000"/>
+                           </value>
+                        </field>
+                        <event activity="layout:ready">
+                           <script contentType="application/x-javascript">var f = this.resolveNode("PRE_SHIPMENT_ADVICE");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+                        </event>
+                     </subform>
+                     <subform name="SF_DOC_CLEARANCE" w="196.85mm" y="53mm">
+                        <draw h="4.5mm" name="LBL_DOC_CLEARANCE" w="196.85mm" y="0mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Documents Required for Clearance:</text>
+                           </value>
+                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+                        </draw>
+                        <field h="26mm" name="DOC_REQUIRED_CLEARANCE" w="196.85mm" y="4.5mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="6.8pt" typeface="Arial"/>
+                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+                           <para vAlign="top"/>
+                           <bind match="dataRef" ref="$record.HD.DOC_REQUIRED_CLEARANCE"/>
+                           <value>
+                              <text maxChars="6000"/>
+                           </value>
+                        </field>
+                        <event activity="layout:ready">
+                           <script contentType="application/x-javascript">var f = this.resolveNode("DOC_REQUIRED_CLEARANCE");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+                        </event>
+                     </subform>
+                     <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" y="84mm">
+                        <draw h="4.5mm" name="LBL_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Shipment advice:</text>
+                           </value>
+                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+                        </draw>
+                        <field h="10mm" name="SHIPMENT_ADVICE" w="196.85mm" y="4.5mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="6.8pt" typeface="Arial"/>
+                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+                           <para vAlign="top"/>
+                           <bind match="dataRef" ref="$record.HD.SHIPMENT_ADVICE"/>
+                           <value>
+                              <text maxChars="3000"/>
+                           </value>
+                        </field>
+                        <event activity="layout:ready">
+                           <script contentType="application/x-javascript">var f = this.resolveNode("SHIPMENT_ADVICE");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+                        </event>
+                     </subform>
+                     <subform name="SF_REMARKS" w="196.85mm" y="98.5mm">
+                        <draw h="4.5mm" name="LBL_REMARKS" w="196.85mm" y="0mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Remarks:</text>
+                           </value>
+                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+                        </draw>
+                        <field h="10mm" name="REMARKS" w="196.85mm" y="4.5mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="6.8pt" typeface="Arial"/>
+                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+                           <para vAlign="top"/>
+                           <bind match="dataRef" ref="$record.HD.REMARKS"/>
+                           <value>
+                              <text maxChars="3000"/>
+                           </value>
+                        </field>
+                        <event activity="layout:ready">
+                           <script contentType="application/x-javascript">var f = this.resolveNode("REMARKS");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+                        </event>
+                     </subform>
+                     <subform name="SF_BANK_DETAILS" w="196.85mm" y="113mm">
+                        <draw h="4.5mm" name="LBL_BANK_DETAILS" w="196.85mm" y="0mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text>Bank Details:</text>
+                           </value>
+                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+                        </draw>
+                        <field h="12mm" name="BANK_DETAILS" w="196.85mm" y="4.5mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="6.8pt" typeface="Arial"/>
+                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+                           <para vAlign="top"/>
+                           <bind match="dataRef" ref="$record.HD.BANK_DETAILS"/>
+                           <value>
+                              <text maxChars="4000"/>
+                           </value>
+                        </field>
+                        <event activity="layout:ready">
+                           <script contentType="application/x-javascript">var f = this.resolveNode("BANK_DETAILS");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}</script>
+                        </event>
+                     </subform>
+                  </subform>
                   <?templateDesigner expand 1?></subform>
                <?templateDesigner expand 1?></subform>
             <?templateDesigner expand 1?></subform>
