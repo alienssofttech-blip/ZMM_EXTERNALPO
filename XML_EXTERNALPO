@@ -1473,7 +1473,15 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 </script>
                         </event>
                      </subform>
-                     <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" y="84mm">
+
+                  </subform>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <subform h="45.5mm" name="SF_BILLING_INFO" w="196.85mm" x="3.175mm">
+         <bind match="none"/>
+                     <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
                         <draw h="4.5mm" name="LBL_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
                            <ui>
                               <textEdit/>
@@ -1507,7 +1515,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 </script>
                         </event>
                      </subform>
-                     <subform name="SF_REMARKS" w="196.85mm" y="98.5mm">
+                     <subform name="SF_REMARKS" w="196.85mm" y="14.5mm">
                         <draw h="4.5mm" name="LBL_REMARKS" w="196.85mm" y="0mm">
                            <ui>
                               <textEdit/>
@@ -1541,7 +1549,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 </script>
                         </event>
                      </subform>
-                     <subform name="SF_BANK_DETAILS" w="196.85mm" y="113mm">
+                     <subform name="SF_BANK_DETAILS" w="196.85mm" y="29mm">
                         <draw h="4.5mm" name="LBL_BANK_DETAILS" w="196.85mm" y="0mm">
                            <ui>
                               <textEdit/>
@@ -1575,11 +1583,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 </script>
                         </event>
                         <?templateDesigner expand 1?></subform>
-                  </subform>
-                  <?templateDesigner expand 1?></subform>
-               <?templateDesigner expand 1?></subform>
-            <?templateDesigner expand 1?></subform>
-         <?templateDesigner expand 1?></subform>
+      </subform>
       <subform h="38.1mm" w="200.025mm">
          <bind match="none"/>
          <draw h="1.5in" name="Text3" w="199.771mm" y="0mm">
