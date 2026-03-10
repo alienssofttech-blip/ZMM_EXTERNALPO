@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xfa generator="AdobeLiveCycleDesigner_V11.0.9.20220218.1.20_SAP" APIVersion="3.6.22049.0"?>
-<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2026-03-05T22:29:15Z" uuid="797c9ab3-57fa-4097-b8e7-3bd099dee681">
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2026-03-10T06:52:47Z" uuid="797c9ab3-57fa-4097-b8e7-3bd099dee681">
 <template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
    <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
    <subform layout="tb" locale="en_US" name="data" restoreState="auto">
@@ -789,8 +789,8 @@ URL-FIELD = XSTRING1</exData>
                   <bind match="none"/>
                </field>
             </subform>
-            <?templateDesigner expand 1?></pageArea>
-         <?templateDesigner expand 1?></pageSet>
+            <?templateDesigner expand 0?></pageArea>
+         <?templateDesigner expand 0?></pageSet>
       <subform layout="tb" minH="69.999mm" w="200.025mm" y="31.75mm">
          <bind match="none"/>
          <subform columnWidths="3.911972in 100.268mm" layout="table" name="Table1">
@@ -1337,7 +1337,7 @@ URL-FIELD = XSTRING1</exData>
                      </desc>
                   </field>
                   <subform name="SF_SECTIONS" w="196.85mm" x="3.175mm" y="54.192mm">
-                     <subform name="SF_SPECIAL_TERMS" w="196.85mm">
+                     <subform name="SF_SPECIAL_TERMS" w="196.85mm" y="0mm">
                         <draw h="4.5mm" name="LBL_SPECIAL_TERMS" w="196.85mm" y="0mm">
                            <ui>
                               <textEdit/>
@@ -1345,7 +1345,7 @@ URL-FIELD = XSTRING1</exData>
                            <value>
                               <text xliff:rid="4925177F-9971-4EE6-9809-3BB43303A81B">Special Terms and Conditions: -</text>
                            </value>
-                           <font size="7pt" typeface="Arial" textColor="0,0,180" underline="1" weight="bold"/>
+                           <font size="7pt" textColor="0,0,180" typeface="Arial" underline="1" weight="bold"/>
                         </draw>
                         <field h="16mm" name="SPECIAL_TERMS" w="196.85mm" y="4.5mm">
                            <ui>
@@ -1449,7 +1449,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
                            </value>
                            <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
                         </draw>
-                        <field h="26mm" name="DOC_REQUIRED_CLEARANCE" w="196.85mm" y="4.5mm">
+                        <field h="18.483mm" name="DOC_REQUIRED_CLEARANCE" w="196.85mm" y="4.5mm">
                            <ui>
                               <textEdit multiLine="1">
                                  <border presence="hidden"/>
@@ -1473,112 +1473,115 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 </script>
                         </event>
                      </subform>
-                     <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" y="84mm">
-                        <draw h="4.5mm" name="LBL_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
-                           <ui>
-                              <textEdit/>
-                           </ui>
-                           <value>
-                              <text xliff:rid="43F3C46A-C470-4D8B-8E97-17FB1AB19954">Shipment advice:</text>
-                           </value>
-                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
-                        </draw>
-                        <field h="10mm" name="SHIPMENT_ADVICE" w="196.85mm" y="4.5mm">
-                           <ui>
-                              <textEdit multiLine="1">
-                                 <border presence="hidden"/>
-                                 <margin/>
-                              </textEdit>
-                           </ui>
-                           <font size="6.8pt" typeface="Arial"/>
-                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
-                           <bind match="dataRef" ref="$record.HD.SHIPMENT_ADVICE"/>
-                           <value>
-                              <text maxChars="3000"/>
-                           </value>
-                        </field>
-                        <event activity="layout:ready" name="event__click">
-                           <script contentType="application/x-javascript">var f = this.resolveNode("SHIPMENT_ADVICE");
-if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
-  this.presence = "hidden";
-} else {
-  this.presence = "visible";
-}
-</script>
-                        </event>
-                     </subform>
-                     <subform name="SF_REMARKS" w="196.85mm" y="98.5mm">
-                        <draw h="4.5mm" name="LBL_REMARKS" w="196.85mm" y="0mm">
-                           <ui>
-                              <textEdit/>
-                           </ui>
-                           <value>
-                              <text xliff:rid="2C03F1E5-49E5-47FC-979E-4B141FC2D665">Remarks:</text>
-                           </value>
-                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
-                        </draw>
-                        <field h="10mm" name="REMARKS" w="196.85mm" y="4.5mm">
-                           <ui>
-                              <textEdit multiLine="1">
-                                 <border presence="hidden"/>
-                                 <margin/>
-                              </textEdit>
-                           </ui>
-                           <font size="6.8pt" typeface="Arial"/>
-                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
-                           <bind match="dataRef" ref="$record.HD.REMARKS"/>
-                           <value>
-                              <text maxChars="3000"/>
-                           </value>
-                        </field>
-                        <event activity="layout:ready" name="event__click">
-                           <script contentType="application/x-javascript">var f = this.resolveNode("REMARKS");
-if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
-  this.presence = "hidden";
-} else {
-  this.presence = "visible";
-}
-</script>
-                        </event>
-                     </subform>
-                     <subform name="SF_BANK_DETAILS" w="196.85mm" y="113mm">
-                        <draw h="4.5mm" name="LBL_BANK_DETAILS" w="196.85mm" y="0mm">
-                           <ui>
-                              <textEdit/>
-                           </ui>
-                           <value>
-                              <text xliff:rid="B6C4ED2A-F1AB-456B-ABD1-9D59276D1B20">Bank Details:</text>
-                           </value>
-                           <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
-                        </draw>
-                        <field h="12mm" name="BANK_DETAILS" w="196.85mm" y="4.5mm">
-                           <ui>
-                              <textEdit multiLine="1">
-                                 <border presence="hidden"/>
-                                 <margin/>
-                              </textEdit>
-                           </ui>
-                           <font size="6.8pt" typeface="Arial"/>
-                           <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
-                           <bind match="dataRef" ref="$record.HD.BANK_DETAILS"/>
-                           <value>
-                              <text maxChars="4000"/>
-                           </value>
-                        </field>
-                        <event activity="layout:ready" name="event__click">
-                           <script contentType="application/x-javascript">var f = this.resolveNode("BANK_DETAILS");
-if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
-  this.presence = "hidden";
-} else {
-  this.presence = "visible";
-}
-</script>
-                        </event>
-                        <?templateDesigner expand 1?></subform>
                   </subform>
                   <?templateDesigner expand 1?></subform>
                <?templateDesigner expand 1?></subform>
             <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 0?></subform>
+      <subform h="45.5mm" name="SF_BILLING_INFO" w="196.85mm" x="3.175mm">
+         <bind match="none"/>
+         <subform name="SF_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
+            <draw h="4.5mm" name="LBL_SHIPMENT_ADVICE" w="196.85mm" y="0mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="43F3C46A-C470-4D8B-8E97-17FB1AB19954">Shipment advice:</text>
+               </value>
+               <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+            </draw>
+            <field h="10mm" name="SHIPMENT_ADVICE" w="196.85mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="6.8pt" typeface="Arial"/>
+               <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+               <bind match="dataRef" ref="$record.HD.SHIPMENT_ADVICE"/>
+               <value>
+                  <text maxChars="3000"/>
+               </value>
+            </field>
+            <event activity="layout:ready" name="event__click">
+               <script contentType="application/x-javascript">var f = this.resolveNode("SHIPMENT_ADVICE");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}
+</script>
+            </event>
+            <?templateDesigner expand 0?></subform>
+         <subform name="SF_REMARKS" w="196.85mm" y="14.5mm">
+            <draw h="4.5mm" name="LBL_REMARKS" w="196.85mm" y="0mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="2C03F1E5-49E5-47FC-979E-4B141FC2D665">Remarks:</text>
+               </value>
+               <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+            </draw>
+            <field h="10mm" name="REMARKS" w="196.85mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="6.8pt" typeface="Arial"/>
+               <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+               <bind match="dataRef" ref="$record.HD.REMARKS"/>
+               <value>
+                  <text maxChars="3000"/>
+               </value>
+            </field>
+            <event activity="layout:ready" name="event__click">
+               <script contentType="application/x-javascript">var f = this.resolveNode("REMARKS");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}
+</script>
+            </event>
+            <?templateDesigner expand 0?></subform>
+         <subform name="SF_BANK_DETAILS" w="196.85mm" y="29mm">
+            <draw h="4.5mm" name="LBL_BANK_DETAILS" w="196.85mm" y="0mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="B6C4ED2A-F1AB-456B-ABD1-9D59276D1B20">Bank Details:</text>
+               </value>
+               <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
+            </draw>
+            <field h="12mm" name="BANK_DETAILS" w="196.85mm" y="4.5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="6.8pt" typeface="Arial"/>
+               <margin bottomInset="0.3mm" leftInset="0.3mm" rightInset="0.3mm" topInset="0.3mm"/>
+               <bind match="dataRef" ref="$record.HD.BANK_DETAILS"/>
+               <value>
+                  <text maxChars="4000"/>
+               </value>
+            </field>
+            <event activity="layout:ready" name="event__click">
+               <script contentType="application/x-javascript">var f = this.resolveNode("BANK_DETAILS");
+if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
+  this.presence = "hidden";
+} else {
+  this.presence = "visible";
+}
+</script>
+            </event>
+            <?templateDesigner expand 0?></subform>
          <?templateDesigner expand 1?></subform>
       <subform h="38.1mm" w="200.025mm">
          <bind match="none"/>
@@ -1618,7 +1621,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
                <text name="Schema Annotation">Name</text>
             </desc>
          </field>
-         <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 0?></subform>
       <subform h="9.525mm" w="200.025mm">
          <bind match="none"/>
          <field h="9mm" name="EBELN" w="114.3mm">
@@ -2407,7 +2410,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
    <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000), objsnap:0, guidesnap:0, pagecentersnap:0?>
    <?templateDesigner FormTargetVersion 33?>
    <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
-   <?templateDesigner Zoom 125?></template>
+   <?templateDesigner Zoom 139?></template>
 <config xmlns="http://www.xfa.org/schema/xci/3.0/">
    <agent name="designer">
       <!--  [0..n]  -->
@@ -2956,7 +2959,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
-         <xmp:MetadataDate>2026-03-05T22:29:15Z</xmp:MetadataDate>
+         <xmp:MetadataDate>2026-03-10T06:52:47Z</xmp:MetadataDate>
          <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
          <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
          <xmpMM:DocumentID>uuid:797c9ab3-57fa-4097-b8e7-3bd099dee681</xmpMM:DocumentID>
