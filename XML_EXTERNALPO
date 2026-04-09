@@ -1336,8 +1336,8 @@ URL-FIELD = XSTRING1</exData>
                         <text name="Schema Annotation">Name</text>
                      </desc>
                   </field>
-                  <subform name="SF_SECTIONS" w="196.85mm" x="3.175mm" y="54.192mm">
-                     <subform name="SF_SPECIAL_TERMS" w="196.85mm" y="0mm">
+                  <subform layout="tb" name="SF_SECTIONS" w="196.85mm" x="3.175mm" y="54.192mm">
+                     <subform layout="tb" name="SF_SPECIAL_TERMS" w="196.85mm">
                         <draw h="4.5mm" name="LBL_SPECIAL_TERMS" w="196.85mm" y="0mm">
                            <ui>
                               <textEdit/>
@@ -1347,7 +1347,7 @@ URL-FIELD = XSTRING1</exData>
                            </value>
                            <font size="7pt" textColor="0,0,180" typeface="Arial" underline="1" weight="bold"/>
                         </draw>
-                        <field h="16mm" name="SPECIAL_TERMS" w="196.85mm" y="4.5mm">
+                        <field h="22mm" name="SPECIAL_TERMS" w="196.85mm">
                            <ui>
                               <textEdit multiLine="1">
                                  <border presence="hidden"/>
@@ -1371,7 +1371,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 </script>
                         </event>
                      </subform>
-                     <subform name="SF_HEALTH_ENV" w="196.85mm" y="21mm">
+                     <subform layout="tb" name="SF_HEALTH_ENV" w="196.85mm">
                         <draw h="4.5mm" name="LBL_HEALTH_ENV" w="196.85mm" y="0mm">
                            <ui>
                               <textEdit/>
@@ -1381,7 +1381,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
                            </value>
                            <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
                         </draw>
-                        <field h="13mm" name="HEALTH_ENV_REQ" w="196.85mm" y="4.5mm">
+                        <field h="18mm" name="HEALTH_ENV_REQ" w="196.85mm">
                            <ui>
                               <textEdit multiLine="1">
                                  <border presence="hidden"/>
@@ -1405,7 +1405,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 </script>
                         </event>
                      </subform>
-                     <subform name="SF_PRE_SHIPMENT" w="196.85mm" y="38.5mm">
+                     <subform layout="tb" name="SF_PRE_SHIPMENT" w="196.85mm">
                         <draw h="4.5mm" name="LBL_PRE_SHIPMENT" w="196.85mm" y="0mm">
                            <ui>
                               <textEdit/>
@@ -1415,7 +1415,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
                            </value>
                            <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
                         </draw>
-                        <field h="10mm" name="PRE_SHIPMENT_ADVICE" w="196.85mm" y="4.5mm">
+                        <field h="14mm" name="PRE_SHIPMENT_ADVICE" w="196.85mm">
                            <ui>
                               <textEdit multiLine="1">
                                  <border presence="hidden"/>
@@ -1439,7 +1439,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
 </script>
                         </event>
                      </subform>
-                     <subform name="SF_DOC_CLEARANCE" w="196.85mm" y="53mm">
+                     <subform layout="tb" name="SF_DOC_CLEARANCE" w="196.85mm">
                         <draw h="4.5mm" name="LBL_DOC_CLEARANCE" w="196.85mm" y="0mm">
                            <ui>
                               <textEdit/>
@@ -1449,7 +1449,7 @@ if (!f || f.rawValue == null || f.rawValue.toString().replace(/\s/g,"") == "") {
                            </value>
                            <font size="7pt" typeface="Arial" underline="1" weight="bold"/>
                         </draw>
-                        <field h="18.483mm" name="DOC_REQUIRED_CLEARANCE" w="196.85mm" y="4.5mm">
+                        <field h="24mm" name="DOC_REQUIRED_CLEARANCE" w="196.85mm">
                            <ui>
                               <textEdit multiLine="1">
                                  <border presence="hidden"/>
