@@ -4908,7 +4908,7 @@ ENDFORM.
 FORM fill_externalpo_section_nodes USING    p_lang TYPE thead-tdspras
                                             p_name TYPE thead-tdname
                                    CHANGING p_hd23 TYPE zmm_st_externalpo.
-* Initialize/mapping from existing legacy fields
+* Initialize external section fields
   CLEAR: p_hd23-special_terms,
          p_hd23-health_env_req,
          p_hd23-pre_shipment_advice,
@@ -4917,15 +4917,21 @@ FORM fill_externalpo_section_nodes USING    p_lang TYPE thead-tdspras
          p_hd23-remarks,
          p_hd23-bank_details.
 
-  p_hd23-special_terms          = p_hd23-po_hd_text.
-  p_hd23-health_env_req         = p_hd23-delivery_method.
-  p_hd23-pre_shipment_advice    = p_hd23-delivery_time.
-  p_hd23-doc_required_clearance = p_hd23-doc_req.
-
-* Dedicated Text IDs for additional sections
-  PERFORM read_ekko_text_by_id USING 'F26' p_lang p_name CHANGING p_hd23-shipment_advice.
-  PERFORM read_ekko_text_by_id USING 'F27' p_lang p_name CHANGING p_hd23-remarks.
-  PERFORM read_ekko_text_by_id USING 'F28' p_lang p_name CHANGING p_hd23-bank_details.
+* Dedicated Text IDs mapping for XML section bindings
+* F27 -> Special Terms and Conditions
+* F28 -> Health & environmental safety
+* F29 -> Pre-shipment
+* F30 -> Documents required advice
+* F31 -> Shipment advice
+* F32 -> Remarks
+* F33 -> Bank Details
+  PERFORM read_ekko_text_by_id USING 'F27' p_lang p_name CHANGING p_hd23-special_terms.
+  PERFORM read_ekko_text_by_id USING 'F28' p_lang p_name CHANGING p_hd23-health_env_req.
+  PERFORM read_ekko_text_by_id USING 'F29' p_lang p_name CHANGING p_hd23-pre_shipment_advice.
+  PERFORM read_ekko_text_by_id USING 'F30' p_lang p_name CHANGING p_hd23-doc_required_clearance.
+  PERFORM read_ekko_text_by_id USING 'F31' p_lang p_name CHANGING p_hd23-shipment_advice.
+  PERFORM read_ekko_text_by_id USING 'F32' p_lang p_name CHANGING p_hd23-remarks.
+  PERFORM read_ekko_text_by_id USING 'F33' p_lang p_name CHANGING p_hd23-bank_details.
 ENDFORM.
 "{ End FM06PE02_02 ENHO AUTO_SCH_EMM_FM06PE02 IS-A-EMM AM_SCH_MM }
 
